@@ -51,14 +51,12 @@ class RedirectUrl(APIView):
 
         try:
             urlexists=UrlModel.objects.get(shorturl=shortUrl)
-            
-            if urlexists.last_accessed is None or urlexists.last_accessed.date() != timezone.now().date():
-                urlexists.hitcountperday=0
 
             urlexists.hitcount+=1
             urlexists.hitcountperday+=1
 
-            
+            if urlexists.last_accessed is None or urlexists.last_accessed.date() != timezone.now().date():
+                urlexists.hitcountperday=1
            
 
             urlexists.last_accessed=timezone.now()
