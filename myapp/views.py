@@ -55,7 +55,7 @@ class RedirectUrl(APIView):
             urlexists.hitcount+=1
             urlexists.hitcountperday+=1
 
-            if urlexists.last_accessed is None or urlexists.last_accessed.date() != timezone.now().date():
+            if urlexists.last_accessed is None or urlexists.last_accessed.date() != timezone.localtime().date():
                 urlexists.hitcountperday=1
            
 
