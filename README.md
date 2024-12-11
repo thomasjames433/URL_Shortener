@@ -48,4 +48,4 @@ The backend is hosted on render at
 
 
 ## LICENSE
-
+[MIT License](LICENSE)
