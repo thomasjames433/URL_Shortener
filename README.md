@@ -4,9 +4,9 @@ This a project that shortens long urls and redirects short urls to their corresp
 -Gets hitcount of each url
 -Every 10th hit-count redirects to an advertisement page (for now google)
 -A url cannot be accesed more than 20 times a day. 
-  - This project resets the dailyhitcount of a URL only when the redirect function is called the next day.
-  - Another repository of mine URL_Shortener_Celery, Uses django-celery and redis to make sure that the dailyhitcount of every url resets to 0 at midnight automatically. Deploying background-           workers(celery) or a Cron-job would require a premium subscription hence I have not deployed it. The link to this project is given below
-  - https://github.com/thomasjames433/URL_Shortener_Celery
+  *This project resets the dailyhitcount of a URL only when the redirect function is called the next day.
+  *Another repository of mine URL_Shortener_Celery, Uses django-celery and redis to make sure that the dailyhitcount of every url resets to 0 at midnight automatically. Deploying background-           workers(celery) or a Cron-job would require a premium subscription hence I have not deployed it. The link to this project is given below
+  *https://github.com/thomasjames433/URL_Shortener_Celery
 
 ## Functionality
 
