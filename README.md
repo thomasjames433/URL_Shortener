@@ -1,4 +1,4 @@
-# Library System
+# URL Shortener
 
 This is a project that shortens long URLs and redirects short URLs to their corresponding long URL. It also tracks the number of times the site has been requested. Made using Django and Django REST Framework.
 
@@ -30,7 +30,10 @@ This is a project that shortens long URLs and redirects short URLs to their corr
 
 ## Backend Hosted URL
 The backend is hosted on render at 
+
 #### https://url-shortener-sko8.onrender.com/
+
+For the admin are username=thomas, password=thomas
 
 
 ## To run the library system:
@@ -40,7 +43,6 @@ The backend is hosted on render at
 #### 2. Navigate into the project directory:
    `cd URL_Shortener`
 #### 3. Install dependencies:
-For the admin are username=thomas, password=thomas
    - `pip freeze > requirements.txt`
    - `python manage.py makemigrations`
    - `python manage.py migrate`  
