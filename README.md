@@ -40,6 +40,7 @@ The backend is hosted on render at
 #### 2. Navigate into the project directory:
    `cd URL_Shortener`
 #### 3. Install dependencies:
+For the admin are username=thomas, password=thomas
    - `pip freeze > requirements.txt`
    - `python manage.py makemigrations`
    - `python manage.py migrate`  
